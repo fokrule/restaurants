@@ -1,0 +1,45 @@
+body
+{
+
+	background-image:url('../images/bg.jpg');
+
+}
+.reg-img
+{
+	margin-top: 50px ;
+	min-height: 100px;
+	min-width: 100px ;
+	max-height: 200px;
+	max-width: 350px ;
+	opacity: 0.5; /* Tranperency */
+	 position: relative;/*  The element is positioned relative to its normal position, */
+	 z-index: -1;   /* If a image has a z-index of -1, it will be placed behind the text. */
+   
+	
+}
+.reg-back-img
+{
+	 
+   position: relative;
+	margin-top: 3px;
+	background-color: white;
+	min-height: auto;
+	min-width: 100px ;
+	max-height: auto;
+	max-width: 350px ;
+}
+.form
+{
+	margin-top: 17px;
+	
+}
+.form:hover
+{
+	background-color: #C9AA62;
+
+	border-left: 16px solid #C9AA62;
+    background-color: lightgrey;
+    background-image:url('../bck.jpg');
+   
+    
+}

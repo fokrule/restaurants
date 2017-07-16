@@ -1,0 +1,822 @@
+
+.comment {
+	margin-bottom: 45px;
+}
+
+.author-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
+}
+
+.author-name {
+	float: left;
+	margin-left: 15px; 
+}
+
+.author-name>h4 {
+	margin: 5px 0px;
+	
+}
+
+.author-time {
+	font-size: 11px;
+	font-style: italic;
+	color: #aaa;
+}
+
+.comment-content {
+	clear: both;
+	margin-left: 65px;
+	font-size: 16px;
+	line-height: 1.3em;
+}
+
+.comments-title {
+	margin-bottom:45px;
+	margin-top: 55px;
+
+}
+
+.comments-title>span {
+	margin-right: 15px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+#cssmenu {
+  background: #1A1C1E;
+  margin: 0;
+  width: auto;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+  z-index: 9999;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+#cssmenu ul:after,
+#cssmenu:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+#cssmenu ul li a {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  -webkit-transition: color .12s ease;
+  -moz-transition: color .12s ease;
+  -ms-transition: color .12s ease;
+  -o-transition: color .12s ease;
+  transition: color .12s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu ul li ul {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+#cssmenu ul li ul li {
+  max-height: 0;
+  position: absolute;
+  -webkit-transition: max-height 0.4s ease-out;
+  -moz-transition: max-height 0.4s ease-out;
+  -ms-transition: max-height 0.4s ease-out;
+  -o-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
+  background: #3A3C3E;
+}
+#cssmenu ul li ul li.has-sub:after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #000000;
+  z-index: 1;
+  top: 13px;
+  right: 15px;
+}
+#cssmenu.align-right ul li ul li.has-sub:after {
+  right: auto;
+  left: 15px;
+}
+#cssmenu ul li ul li.has-sub:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 3px solid transparent;
+  border-left-color: #ffffff;
+  z-index: 2;
+  top: 15px;
+  right: 15px;
+}
+#cssmenu.align-right ul li ul li.has-sub:before {
+  right: auto;
+  left: 15px;
+  border-left-color: transparent;
+  border-right-color: #ffffff;
+}
+#cssmenu ul li ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  color: #d1d1d1;
+  letter-spacing: 0;
+  display: block;
+  width: 170px;
+  padding: 11px 10px 11px 20px;
+}
+#cssmenu ul li ul li:hover {
+	background: #4A4C4E;
+	
+}
+
+#cssmenu ul li ul li:hover > a,
+#cssmenu ul li ul li.active > a {
+  color: #fff;
+}
+#cssmenu ul li ul li:hover:after,
+#cssmenu ul li ul li.active:after {
+  background: #1A1C1E;
+}
+#cssmenu ul li ul li:hover > ul {
+  left: 100%;
+  top: 0;
+}
+#cssmenu ul li ul li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul > li {
+  float: none;
+  display: inline-block;
+}
+#cssmenu.align-center > ul {
+  text-align: center;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-right > ul {
+  float: right;
+}
+#cssmenu.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu.align-right ul ul li:hover > ul {
+  right: 100%;
+  left: auto;
+}
+#cssmenu.align-right ul ul li a {
+  text-align: right;
+}
+#cssmenu > ul > li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 0;
+  background: #ffffff;
+  -webkit-transition: height .2s;
+  -moz-transition: height .2s;
+  -ms-transition: height .2s;
+  -o-transition: height .2s;
+  transition: height .2s;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+#cssmenu > ul > li.has-sub > a:after {
+  display: block;
+  content: "";
+  background: #ffffff;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  border-radius: 13px;
+  right: 14px;
+  top: 16px;
+}
+#cssmenu > ul > li.has-sub > a:before {
+  display: block;
+  content: "";
+  border: 4px solid transparent;
+  border-top-color: #4A4C4E;
+  z-index: 2;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 16px;
+  top: 21px;
+}
+#cssmenu > ul > li > a {
+  color: #d1d1d1;
+  padding: 15px 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+#cssmenu > ul > li:hover:after,
+#cssmenu > ul > li.active:after {
+  height: 100%;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  color: #000000;
+}
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li.active > a:after {
+  background: #000000;
+}
+#cssmenu > ul > li:hover > a:before,
+#cssmenu > ul > li.active > a:before {
+  border-top-color: #ffffff;
+}
+#cssmenu > ul > li:hover > ul {
+  left: 0;
+}
+#cssmenu > ul > li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu > ul > li > a {
+  display: block;
+}
+#cssmenu > ul > li {
+  width: auto;
+}
+#cssmenu > ul > li > ul {
+  width: 170px;
+  display: block;
+}
+#cssmenu > ul > li > ul > li {
+  width: 170px;
+  display: block;
+}
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #cssmenu > ul {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.35s ease-out;
+    -moz-transition: max-height 0.35s ease-out;
+    -ms-transition: max-height 0.35s ease-out;
+    -o-transition: max-height 0.35s ease-out;
+    transition: max-height 0.35s ease-out;
+  }
+  #cssmenu > ul > li > ul {
+    width: 100%;
+    display: block;
+  }
+  #cssmenu.align-right ul li a {
+    text-align: left;
+  }
+  #cssmenu > ul > li > ul > li {
+    width: 100%;
+    display: block;
+  }
+  #cssmenu.align-right ul ul li a {
+    text-align: left;
+  }
+  #cssmenu > ul > li > ul > li > a {
+    width: 100%;
+    display: block;
+  }
+  #cssmenu ul li ul li a {
+    width: 100%;
+  }
+  #cssmenu.align-center > ul {
+    text-align: left;
+  }
+  #cssmenu.align-center > ul > li {
+    display: block;
+  }
+  #cssmenu > ul.open {
+    max-height: 1000px;
+    border-top: 1px solid rgba(110, 110, 110, 0.25);
+  }
+  #cssmenu ul {
+    width: 100%;
+  }
+  #cssmenu ul > li {
+    float: none;
+    width: 100%;
+  }
+  #cssmenu ul li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+  }
+  #cssmenu ul > li:after {
+    display: none;
+  }
+  #cssmenu ul li.has-sub > a:after,
+  #cssmenu ul li.has-sub > a:before,
+  #cssmenu ul li ul li.has-sub:after,
+  #cssmenu ul li ul li.has-sub:before {
+    display: none;
+  }
+  #cssmenu ul li ul,
+  #cssmenu ul li ul li ul,
+  #cssmenu ul li ul li:hover > ul,
+  #cssmenu.align-right ul li ul,
+  #cssmenu.align-right ul li ul li ul,
+  #cssmenu.align-right ul li ul li:hover > ul {
+    left: 0;
+    position: relative;
+    right: auto;
+  }
+  #cssmenu ul li ul li,
+  #cssmenu ul li:hover > ul > li {
+    max-height: 999px;
+    position: relative;
+    background: none;
+  }
+  #cssmenu ul li ul li a {
+    padding: 8px 20px 8px 35px;
+    color: #ffffff;
+  }
+  #cssmenu ul li ul ul li a {
+    padding: 8px 20px 8px 50px;
+  }
+  #cssmenu ul li ul li:hover > a {
+    color: #000000;
+  }
+  #cssmenu #menu-button {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #cssmenu #menu-button:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    right: 20px;
+    top: 16px;
+  }
+  #cssmenu #menu-button:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #ffffff;
+    right: 20px;
+    top: 26px;
+  }
+}
+
+/*
+Free Html5 Responsive Templates : http://www.html5xcss3.com/
+*/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Reset----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}table, table td {padding:0;border:none;border-collapse:collapse;}img {vertical-align:top;}embed {vertical-align:top;}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, 
+
+/*
+Zerotheme.com | Free Html5 Responsive Templates
+Zerogrid - A Single Grid System for Responsive Design
+Author URI: http://www.zerotheme.com/
+*/
+/* -------------------------------------------- */
+/* ------------------Grid System--------------- */ 
+.zerogrid{ width: 1200px; position: relative; margin: 0 auto; padding: 0px;}
+.zerogrid:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.zerogrid .f-right{float: right!important;}
+.zerogrid .f-left{float: left!important;}
+
+.zerogrid .row{}
+.zerogrid .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.zerogrid .row:after{clear: both; }
+.zerogrid .row{zoom: 1;}
+
+.zerogrid .wrap-col{margin:10px;}
+
+.zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{float:left; display: inline-block;}
+
+.zerogrid .col-full{width:100%;}
+
+.zerogrid .col-1-2,.zerogrid .col-1-2-fixed{width:50%;}
+.zerogrid .offset-1-2{margin-left: 50%;}
+
+.zerogrid .col-1-3,.zerogrid .col-1-3-fixed{width:33.33%;}
+.zerogrid .col-2-3,.zerogrid .col-2-3-fixed{width:66.66%;}
+.zerogrid .offset-1-3{margin-left: 33.33%;}
+.zerogrid .offset-2-3{margin-left: 66.66%;}
+
+.zerogrid .col-1-4,.zerogrid .col-1-4-fixed{width:25%;}
+.zerogrid .col-2-4,.zerogrid .col-2-4-fixed{width:50%;}
+.zerogrid .col-3-4,.zerogrid .col-3-4-fixed{width:75%;}
+.zerogrid .offset-1-4{margin-left: 25%;}
+.zerogrid .offset-2-4{margin-left: 50%;}
+.zerogrid .offset-3-4{margin-left: 75%;}
+
+.zerogrid .col-1-5,.zerogrid .col-1-5-fixed{width:20%;}
+.zerogrid .col-2-5,.zerogrid .col-2-5-fixed{width:40%;}
+.zerogrid .col-3-5,.zerogrid .col-3-5-fixed{width:60%;}
+.zerogrid .col-4-5,.zerogrid .col-4-5-fixed{width:80%;}
+.zerogrid .offset-1-5{margin-left: 20%;}
+.zerogrid .offset-2-5{margin-left: 40%;}
+.zerogrid .offset-3-5{margin-left: 60%;}
+.zerogrid .offset-4-5{margin-left: 80%;}
+
+.zerogrid .col-1-6,.zerogrid .col-1-6-fixed{width:16.66%;}
+.zerogrid .col-2-6,.zerogrid .col-2-6-fixed{width:33.33%;}
+.zerogrid .col-3-6,.zerogrid .col-3-6-fixed{width:50%;}
+.zerogrid .col-4-6,.zerogrid .col-4-6-fixed{width:66.66%;}
+.zerogrid .col-5-6,.zerogrid .col-5-6-fixed{width:83.33%;}
+.zerogrid .offset-1-6{margin-left: 16.66%;}
+.zerogrid .offset-2-6{margin-left: 33.33%;}
+.zerogrid .offset-3-6{margin-left: 50%;}
+.zerogrid .offset-4-6{margin-left: 66.66%;}
+.zerogrid .offset-5-6{margin-left: 83.33%;}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.zerogrid{width:960px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.zerogrid{width:768px;}
+}
+
+@media only screen and (max-width: 767px) {
+	.zerogrid, .zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{width:100%;}
+	
+	.zerogrid .offset-1-2, .zerogrid .offset-1-3, .zerogrid .offset-2-3, .zerogrid .offset-1-4, .zerogrid .offset-2-4, .zerogrid .offset-3-4, .zerogrid .offset-1-5, .zerogrid .offset-2-5, .zerogrid .offset-3-5, .zerogrid .offset-4-5, .zerogrid .offset-1-6, .zerogrid .offset-2-6, .zerogrid .offset-3-6, .zerogrid .offset-4-6, .zerogrid .offset-5-6{margin-left:0;}
+}
+.top-spacing
+{
+	margin-top: 20px;
+}
+
+.comment {
+	margin-bottom: 45px;
+}
+
+.author-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
+}
+
+.author-name {
+	float: left;
+	margin-left: 15px; 
+}
+
+.author-name>h4 {
+	margin: 5px 0px;
+	
+}
+
+.author-time {
+	font-size: 11px;
+	font-style: italic;
+	color: #aaa;
+}
+
+.comment-content {
+	clear: both;
+	margin-left: 65px;
+	font-size: 16px;
+	line-height: 1.3em;
+}
+
+.comments-title {
+	margin-bottom:45px;
+	color: red;
+}
+
+.comments-title>span {
+	margin-right: 15px;
+}summary, time {display:inline;}
+input, textarea {border:0; padding:0; margin:0; outline: 0;}
+iframe {border:0; margin:0; padding:0;}
+input, textarea, select {margin:0; padding:0px;}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+::-moz-selection{background: #fafcbe none repeat scroll 0 0;color: #6a6c2e;text-shadow:none}
+::selection{background: #fafcbe none repeat scroll 0 0;color: #6a6c2e;text-shadow:none}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+html { -webkit-text-size-adjust: none;}
+.video embed,.video object,.video iframe { width: 100%;  height: auto;}
+img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
+
+a{color: #0aac8e;text-decoration: none;-webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+	transition-duration: 0.3s;}
+a:hover {opacity: 0.9; text-decoration: underline;}
+
+h1	{font-size: 25px;line-height: 30px;}
+h3, h4	{font-size: 20px;line-height: 20px;}
+h5, h6	{font-size: 16px;line-height: 16px;}
+
+h1, h3, h4, h5, h6{clear: both;hyphens: auto; color: #333;}
+
+p, address{margin: 15px 0;}
+
+.t-center{text-align: center;}
+.t-left{text-align: left;}
+.t-right{text-align: right;}
+.f-right{float: right;}
+.f-left{float: left;}
+
+.post{}
+.post:after, .post:before, article:after, article:before, section:after, section:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
+
+.clear{content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix:after, .clearfix:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
+
+hr.line{border-color: #e9e9e9;padding: 0;margin: 0;}
+.uppercase{text-transform: uppercase;}
+.widget-title{font-weight: 500;text-transform: uppercase;line-height: 1.38;margin-bottom: 20px;font-size: 14px;color: #8a8c8e;}
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Html-Body------------------------------- */
+/* ---------------------------------------------------------------------------- */
+html, body {width:100%; padding:0; margin:0;}
+body {font: 15px/25px Arial;font-family: "Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif;background:#E7E9EB;padding:0 50px;color: #8a8c8e;}
+body .wrap-body{}
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px){
+	body{padding: 0;}
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Container------------------------------ */
+/* ---------------------------------------------------------------------------- */
+.home-page{}
+.single-page{}
+.archive-page{}
+.contact-page{}
+
+#container {}
+#container .wrap-container{background: #ffffff;}
+
+/* ---content-box--- */
+.content-box {}
+.content-box .wrap-box {padding: 70px 60px; position: relative;}
+.content-box .header {text-align: center; margin-bottom: 30px;color: #212121;letter-spacing: 2px;}
+.content-box .header {font-size: 30px; line-height: 30px;font-weight: 500;}
+.content-box .header .wrapper{padding: 5px; display: inline-block;}
+
+.content-box.boxstyle-1{background:#1A1C1E; color: #8a8c8e;}
+.content-box.boxstyle-2{background:#F1F3F5;}
+
+.content-box.box-1 {font-size: 14px;}
+.content-box.box-1 .widget-title{}
+
+.content-box.box-2 {}
+.portfolio-box {display: block;position: relative;margin: 0 auto 20px;}
+.portfolio-box .portfolio-box-caption {display: block;position: absolute;bottom: 0;width: 100%;height: 100%;max-height:370px;max-width:370px;text-align: center;color: #fff;opacity: 0;background: rgba(0, 0, 0,.6);-webkit-transition: all .35s;-moz-transition: all .35s;transition: all .35s;}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {position: absolute;top: 50%;width: 100%;text-align: center;transform: translateY(-50%);}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {padding: 0 15px;font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {text-transform: uppercase;font-size: 14px;font-weight: 600;}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {font-size: 18px;}
+.portfolio-box:hover .portfolio-box-caption {opacity: 1;}
+
+.content-box.box-3 {}
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Footer--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+footer{background: #1A1C1E;font-size: 14px;}
+
+footer .wrap-footer{padding: 70px 60px;}
+footer .wrap-footer ul li {margin-bottom: 5px;padding: 10px 0 15px;}
+footer .logo img{max-width: 170px;margin-top: 30px;}
+footer .col-footer-1 {}
+
+
+.copyright{background: #151515;color: #999;}
+.copyright .wrapper{padding: 20px;}
+.copyright ul.quick-link{float: right;}
+.copyright ul.quick-link li {display: inline-block;margin-right: 10px;}
+.copyright a{}
+
+
+
+hr.style13 {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 8px 8px -8px #8c8b8b inset;
+}
+.box-bg
+{
+  background-color: white;
+  height: 230px;
+}
+.table-part
+{
+  color: white;
+
+}
+.th {text-align:center}
+
+table caption {
+  padding: .5em 0;
+}
+
+@media screen and (max-width: 767px) {
+  table caption {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}
+
+/*
+Zerotheme.com | Free Html5 Responsive Templates
+Zerogrid - A Single Grid System for Responsive Design
+Author URI: http://www.zerotheme.com/
+*/
+/* -------------------------------------------- */
+/* ------------------Grid System--------------- */ 
+.zerogrid{ width: 1200px; position: relative; margin: 0 auto; padding: 0px;}
+.zerogrid:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.zerogrid .f-right{float: right!important;}
+.zerogrid .f-left{float: left!important;}
+
+.zerogrid .row{}
+.zerogrid .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.zerogrid .row:after{clear: both; }
+.zerogrid .row{zoom: 1;}
+
+.zerogrid .wrap-col{margin:10px;}
+
+.zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{float:left; display: inline-block;}
+
+.zerogrid .col-full{width:100%;}
+
+.zerogrid .col-1-2,.zerogrid .col-1-2-fixed{width:50%;}
+.zerogrid .offset-1-2{margin-left: 50%;}
+
+.zerogrid .col-1-3,.zerogrid .col-1-3-fixed{width:33.33%;}
+.zerogrid .col-2-3,.zerogrid .col-2-3-fixed{width:66.66%;}
+.zerogrid .offset-1-3{margin-left: 33.33%;}
+.zerogrid .offset-2-3{margin-left: 66.66%;}
+
+.zerogrid .col-1-4,.zerogrid .col-1-4-fixed{width:25%;}
+.zerogrid .col-2-4,.zerogrid .col-2-4-fixed{width:50%;}
+.zerogrid .col-3-4,.zerogrid .col-3-4-fixed{width:75%;}
+.zerogrid .offset-1-4{margin-left: 25%;}
+.zerogrid .offset-2-4{margin-left: 50%;}
+.zerogrid .offset-3-4{margin-left: 75%;}
+
+.zerogrid .col-1-5,.zerogrid .col-1-5-fixed{width:20%;}
+.zerogrid .col-2-5,.zerogrid .col-2-5-fixed{width:40%;}
+.zerogrid .col-3-5,.zerogrid .col-3-5-fixed{width:60%;}
+.zerogrid .col-4-5,.zerogrid .col-4-5-fixed{width:80%;}
+.zerogrid .offset-1-5{margin-left: 20%;}
+.zerogrid .offset-2-5{margin-left: 40%;}
+.zerogrid .offset-3-5{margin-left: 60%;}
+.zerogrid .offset-4-5{margin-left: 80%;}
+
+.zerogrid .col-1-6,.zerogrid .col-1-6-fixed{width:16.66%;}
+.zerogrid .col-2-6,.zerogrid .col-2-6-fixed{width:33.33%;}
+.zerogrid .col-3-6,.zerogrid .col-3-6-fixed{width:50%;}
+.zerogrid .col-4-6,.zerogrid .col-4-6-fixed{width:66.66%;}
+.zerogrid .col-5-6,.zerogrid .col-5-6-fixed{width:83.33%;}
+.zerogrid .offset-1-6{margin-left: 16.66%;}
+.zerogrid .offset-2-6{margin-left: 33.33%;}
+.zerogrid .offset-3-6{margin-left: 50%;}
+.zerogrid .offset-4-6{margin-left: 66.66%;}
+.zerogrid .offset-5-6{margin-left: 83.33%;}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.zerogrid{width:960px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.zerogrid{width:768px;}
+}
+
+@media only screen and (max-width: 767px) {
+	.zerogrid, .zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{width:100%;}
+	
+	.zerogrid .offset-1-2, .zerogrid .offset-1-3, .zerogrid .offset-2-3, .zerogrid .offset-1-4, .zerogrid .offset-2-4, .zerogrid .offset-3-4, .zerogrid .offset-1-5, .zerogrid .offset-2-5, .zerogrid .offset-3-5, .zerogrid .offset-4-5, .zerogrid .offset-1-6, .zerogrid .offset-2-6, .zerogrid .offset-3-6, .zerogrid .offset-4-6, .zerogrid .offset-5-6{margin-left:0;}
+}
+.top-spacing
+{
+	margin-top: 20px;
+}
+
+.comment {
+	margin-bottom: 45px;
+}
+
+.author-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
+}
+
+.author-name {
+	float: left;
+	margin-left: 15px; 
+}
+
+.author-name>h4 {
+	margin: 5px 0px;
+	
+}
+
+.author-time {
+	font-size: 11px;
+	font-style: italic;
+	color: #aaa;
+}
+
+.comment-content {
+	clear: both;
+	margin-left: 65px;
+	font-size: 16px;
+	line-height: 1.3em;
+}
+
+.comments-title {
+	margin-bottom:45px;
+	color: red;
+}
+
+.comments-title>span {
+	margin-right: 15px;
+}
